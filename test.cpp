@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main(){
-    std::cout << "Poop can" << std::endl;
+    std::cout << "Pee stick" << std::endl;
     return 0;
 }
