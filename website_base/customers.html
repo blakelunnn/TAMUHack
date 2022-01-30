@@ -70,24 +70,28 @@
             </script>
             -->
             <div id="mainContainer" ></div>
+            
+            <script src="contractor/contractorList.js"></script>
             <script>
+              //var companies = ["Ralph Plumbing" , "Marrion Roofing" , "Smith Flooring", "Bob's Electrical", "Blake's Butts"];
               function createDiv(numberOfDivs) {
               var i = 0;
               var newElement = [];
-              var companies = ["Ralph Plumbing" , "Marrion Roofing" , "Smith Flooring"];
               var mainContainer = document.getElementById('mainContainer');
+              var company;
 
               for (i; i < numberOfDivs; i++) {
+                company = companies[i];
                 newElement[i] = document.createElement('form');
                 //newElement[i].style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
                 newElement[i].className = 'box';
                 newElement[i].id = (i + 1);
-                newElement[i].textContent = companies[i];
+                newElement[i].textContent = company['name'] + " " + company['phone-number'] + " " + company['website'];
                 mainContainer.appendChild(newElement[i]);
               }
             };
 
-            createDiv(3);
+            createDiv(companies.length);
             </script>
           </form>
         </div>
