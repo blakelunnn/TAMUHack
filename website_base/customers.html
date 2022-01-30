@@ -71,10 +71,10 @@
             -->
             <div id="mainContainer" ></div>
             <script>
+              var companies = ["Ralph Plumbing" , "Marrion Roofing" , "Smith Flooring", "Bob's Electrical", "Blake's Butts"];
               function createDiv(numberOfDivs) {
               var i = 0;
               var newElement = [];
-              var companies = ["Ralph Plumbing" , "Marrion Roofing" , "Smith Flooring"];
               var mainContainer = document.getElementById('mainContainer');
 
               for (i; i < numberOfDivs; i++) {
@@ -87,7 +87,7 @@
               }
             };
 
-            createDiv(3);
+            createDiv(companies.length);
             </script>
           </form>
         </div>
