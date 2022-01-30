@@ -29,7 +29,7 @@
             <a href="index.html" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="tech.html" class="navbar__links">Customer</a>
+            <a href="customers.html" class="navbar__links">Customer</a>
           </li>
           <li class="navbar__item">
             <a href="/products" class="navbar__links">Contractor</a>
@@ -40,15 +40,14 @@
         </ul>
       </div>
     </nav>
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Customer</h1>
-          <p>Start saving</p>
-          <button class="main__btn"><a href="#">Get Started</a></button>
-        </div>
-        <div class="main__img-container">
-          <img id="main__img" src="images/pic2.jpg" />
+    <div class="customer">
+      <div class="customer__container">
+        <div class="customer__content">
+          <h1 id="customerHeader"></h1>
+          <script>
+            let reputation = "Great!";
+            document.getElementById("customerHeader").textContent = "Current Customer Status: " + reputation;
+          </script>
         </div>
       </div>
     </div>
