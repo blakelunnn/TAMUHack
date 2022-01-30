@@ -343,6 +343,17 @@
   -moz-text-fill-color: transparent;
 }
 
+.customer__content h2 {
+  font-size: 2rem;
+  background-color: #000;
+  /*background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);*/
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 /* Contractor Content */
 .contractor {
   background-color: #ffffff;
@@ -378,6 +389,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
