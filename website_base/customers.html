@@ -39,7 +39,7 @@
             <a href="contractor/contractors.html" class="navbar__links">Contractor</a>
           </li>
           <li class="navbar__btn">
-            <a href="/sign-up" class="button">Sign Up</a>
+            <a href="sign-up.html" class="button">Sign Up</a>
           </li>
         </ul>
       </div>
@@ -69,30 +69,72 @@
               document.getElementById("companyName2").textContent = company;
             </script>
             -->
-            <div id="mainContainer" ></div>
-            
+            <div id="contractorListContainer", class="contractorListContainer" ></div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Phone</th>
+                  <th>Specialties</th>
+                  <th>Location</th>
+                  <th>Price Range ($-$$$)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://www.google.com/search?q=bob%27s+plumbing&oq=bob%27s+plumbing&aqs=chrome..69i57j46i175i199i512j0i512l2j0i457i512j0i512l2j46i175i199i512l2j0i512.2203j0j7&sourceid=chrome&ie=UTF-8
+                    " title="Bob's Plumbing.">Bob's Plumbing</a></td>
+                  <th>832-777-3419</th>
+                  <td>Plumbing, HVAC</td>
+                  <td>College Station, TX</td>
+                  <td>$$</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Ralph's Flooring.">Ralph's Flooring</a></td>
+                  <th>979-231-2341</th>
+                  <td>Flooring, Painting</td>
+                  <td>Bryan, TX</td>
+                  <td>$</td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Smith Roofing.">Smith Roofing</a></td>
+                  <th>777-231-4246</th>
+                  <td>Roofing</td>
+                  <td>College Station, TX</td>
+                  <td>$$$</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            <!--
             <script src="contractor/contractorList.js"></script>
             <script>
               //var companies = ["Ralph Plumbing" , "Marrion Roofing" , "Smith Flooring", "Bob's Electrical", "Blake's Butts"];
               function createDiv(numberOfDivs) {
               var i = 0;
               var newElement = [];
-              var mainContainer = document.getElementById('mainContainer');
+              var newSubElement = [];
+              var contractorListContainer = document.getElementById('contractorListContainer');
               var company;
 
               for (i; i < numberOfDivs; i++) {
                 company = companies[i];
-                newElement[i] = document.createElement('form');
+                newElement[i] = document.createElement('box');
+                newSubElement[i] = document.createElement('table');
                 //newElement[i].style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
                 newElement[i].className = 'box';
                 newElement[i].id = (i + 1);
-                newElement[i].textContent = company['name'] + " " + company['phone-number'] + " " + company['website'];
-                mainContainer.appendChild(newElement[i]);
+                contractorListContainer.appendChild(newElement[i]);
+                newSubElement[i].className = 'table';
+                newSubElement[i].id = (i + 1);
+                newSubElement[i].textContent = company['name'] + "----" + company['phone-number'] + "----" + company['website'];
+                newElement[i].appendChild(newSubElement[i]);
+                
               }
             };
 
             createDiv(companies.length);
-            </script>
+            </script>-->
           </form>
         </div>
       </div>

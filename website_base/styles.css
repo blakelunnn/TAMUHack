@@ -159,6 +159,7 @@
     width: 100%;
     display: table;
   }
+  
 
   .navbar__btn {
     padding-bottom: 2rem;
@@ -352,6 +353,11 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.contractorListContainer {
+  text-align: center;
+
 }
 
 /* Contractor Content */
